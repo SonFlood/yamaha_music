@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야마하뮤직 리뉴얼</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#side_menu').hide(0);
+
+            var i = 0;
+
+            $('.side_btn').click(function(){
+
+                $('.side_btn').toggleClass('active');
+
+                if(i==0) {
+                    $('#side_menu').fadeIn(500).css({
+                        opacity: '1'
+                    });                    
+                    i++;
+                }else if(i==1) {
+                    $('#side_menu').fadeOut(500);
+                    i=0;
+                }
+
+            });
+
+
+        }); /* end */
+    </script>
+
+    <!-- aos css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div id="wrap">
+
+        <div id="header_wrap">
+            <header>
+                <div id="in_header">
+    
+                    <div id="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+    
+                    <ul id="gnb">
+                        <li><a href="#">온라인몰</a> <div class="gnb_line"></div></li>
+                        <li><a href="#">제품 정보</a> <div class="gnb_line"></div></li>
+                        <li><a href="#">뉴스&이벤트</a> <div class="gnb_line"></div></li>
+                        <li><a href="#">점포 검색</a> <div class="gnb_line"></div></li>
+                        <li><a href="#">고객 서비스</a> <div class="gnb_line"></div></li>
+                    </ul>
+    
+                    <a class="side_btn" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+    
+                </div>
+    
+                <div id="side_wrap">
+                    <div id="side_menu">
+                        <div id="side_inner">
+                            <div>
+                                <a href="#">
+                                    <h3>온라인몰</h3>
+                                </a>
+                                
+                            </div>
+                            
+                            <div>
+                                <a href="#">
+                                    <h3>제품정보</h3>
+                                </a>
+                                
+                                <a href="#">
+                                    <p>클래식 악기<div class="side_line"></div></p>
+                                </a>
+                                
+                                <a href="#">
+                                    <p>전자 악기<div class="side_line"></div></p>
+                                </a>
+                                
+                            </div>
+                            
+                            <div>
+                                <a href="#">
+                                    <h3>뉴스&이벤트</h3>
+                                </a>
+                                
+                            </div>
+                            
+                            <div>
+                                <a href="#">
+                                    <h3>점포 검색</h3>
+                                </a>
+                                
+                            </div>
+                            
+                            <div>
+                                <a href="#">
+                                    <h3>고객서비스</h3>
+                                </a>
+                                
+                                <a href="#">
+                                    <p>문의하기<div class="side_line"></div></p>
+                                </a>
+                                <a href="#">
+                                    <p>서비스센터 안내<div class="side_line"></div></p>
+                                </a>
+                                <a href="#">
+                                    <p>FAQ<div class="side_line"></div></p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </header>
+        </div>
+        
+
+        <section id="section_1">
+            <div>
+                <img src="img/s1.png" alt="">
+            </div>
+            <div id="s1_txt">
+                <h1 >YAMAHA</h1>
+            </div>
+            
+        </section>
+
+        <section id="section_2">
+            <h2 data-aos="fade-right"
+            data-aos-duration="300"
+            data-aos-easing="ease-in-sine">PROMOTION</h2>
+
+            <div id="s2_inner">
+                <div id="s2_txt" 
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
+                    <h4>
+                        40th anniversary of Clavinova
+                    </h4>
+                    <p>
+                        1983년에 출시되어 올해로 판매 40주년을 맞이한<br/>
+                        클라비노바에는 야마하가  걸어온 130년 이상의<br/>
+                        장인정신과 제작기술이 담겨 있습니다.<br/>
+                        감동적인 선율과 혜택을 지금 누리세요.
+                    </p>
+                    <p>
+                        1983년에 출시되어 올해로 판매 40주년을 맞이한
+                        클라비노바에는 야마하가  걸어온 130년 이상의
+                        장인정신과 제작기술이 담겨 있습니다.
+                        감동적인 선율과 혜택을 지금 누리세요.
+                    </p>
+                    <a href="#">
+                        <div id="s2_btn">
+                            <p>VIEW MORE</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div id="s2_img" 
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
+                    <a href="#">
+                        <img src="img/s2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_3" 
+        data-aos="fade-zoom-in"
+        data-aos-duration="800"
+        data-aos-offset="0">
+            <h2>INSTRUMENT</h2>
+            <div id="s3_inner">
+                <div class="s3_img">
+                    <a href="#">
+                        <img src="img/s3_1.png" alt="">
+                    </a>
+
+                    <div class="s3_txt">
+                        <h3>CLASSICAL INSTRUMENT</h3>
+                        <p>
+                            피아노, 기타, 현악기, 타악기, 마칭악기, 금관악기, 목관악기 등<br/>
+                            야마하의 다양한 클래식 악기를 알아보세요.
+                        </p>
+                    </div>
+                </div>
+                <div class="s3_img">
+                    <a href="#">
+                        <img src="img/s3_2.png" alt="">
+                    </a>
+
+                    <div class="s3_txt">
+                        <h3>ELECTRONIC INSTRUMENT</h3>
+                        <p>
+                            디지털 피아노, 신디사이저, 베이스 및 일렉 기타, 드럼 등<br/>
+                            야마하의 다양한 전자 악기를 알아보세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_4">
+            <h2 data-aos="fade-right"
+            data-aos-duration="300"
+            data-aos-easing="ease-in-sine">SOUND SYSTEM</h2>
+            <div id="s4_inner">
+                <div id="s4_txt" 
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
+                    <p class="s4_pc">
+                        야마하 사운드 시스템에는 뮤직 프로덕션 툴,<br/>
+                        헤드셋, 오디오 및 비주얼, 프로 오디오,<br/>
+                        통합 커뮤니케이션, 어플리케이션 등이 있습니다.<br/>
+                    </p>
+                    <p class="s4_1724">
+                        야마하 사운드 시스템에는 뮤직 프로덕션 툴,
+                        헤드셋, 오디오 및 비주얼, 프로 오디오,
+                        통합 커뮤니케이션, 어플리케이션 등이 있습니다.
+                    </p>
+                    <a href="#">
+                        <div id="s4_btn">
+                            <p>VIEW MORE</p>
+                        </div>    
+                    </a>
+                    
+                </div>
+                <div id="s4_img" 
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
+                    <a href="#">
+                        <img src="img/s4.png" alt="">
+                        <img src="img/ms4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_5"
+        data-aos="fade-zoom-in"
+        data-aos-duration="800"
+        data-aos-offset="0">
+            <h2>NEWS & EVENT</h2>
+            <div id="s5_inner">
+                <a href="#">
+                    <div class="s5_news">
+                        <!-- <a href="#"> -->
+                            <h4>
+                                류이치 사카모토 OPUS 회원 이벤트 안내
+                            </h4>
+                        <!-- </a> -->
+                        
+                        <a href="#">
+                            <div class="s5_btn">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="s5_news">
+                        <!-- <a href="#"> -->
+                            <h4 class="s5_pc">
+                                드러머 장원영 엔도스먼트 계약, 아티스트 지원 강화
+                            </h4>
+                            <h4 class="s5_m">
+                                드러머 장원영 엔도스먼트 계약
+                            </h4>
+                        <!-- </a> -->
+                        
+                        <a href="#">
+                            <div class="s5_btn">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="s5_news">
+                        <!-- <a href="#"> -->
+                            <h4>
+                                DTX 콘테스트 with 김승호 EVENT
+                            </h4>
+                        <!-- </a> -->
+                        
+                        <a href="#">
+                            <div class="s5_btn">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="section_6" 
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="800"
+        >
+            <h2>YAMAHA MEMBERSHIP</h2>
+            <h2>YAMAHA<br/>MEMBERSHIP</h2>
+            <div id="s6_inner">
+                <p id="s6_pc">자신만의 소리와 음악으로 "Make Waves"에 동참할 수 있도록<br/>
+                    야마하는 여러분과 함께 하겠습니다.</p>
+                <p id="s6_m">자신만의 소리와 음악으로 "Make Waves"에<br/>
+                    동참할 수 있도록 여러분과 함께 하겠습니다.</p>
+
+                <a href="#">
+                    <div id="s6_btn">
+                        <p>JOIN US</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div id="f_line"></div>
+            <div id="f_inner">
+
+                <div id="f_logo">
+                    <a href="#">
+                        <h2>YAMAHA MUSIC KOREA</h2>
+                    </a>
+                    <p>Yamaha Music Korea © All Rights Reserved.</p>
+                </div>
+
+                <div id="f_txt">
+                    <div id="f_left">
+                        <p>사업장 주소</p>
+                        <p>사업자 등록번호</p>
+                        <p>대표 이사</p>
+                        <p>TEL</p>
+                    </div>
+                    <div id="f_right">
+                        <p>서울특별시 강남구 강남대로 298, 11층</p>
+                        <p>220-86-1913</p>
+                        <p>Yuji Matsuoka</p>
+                        <p>고객지원센터 080-004-0022</p>
+                    </div>
+                </div>
+
+                <div id="f_last">
+                    <p>Yamaha Music Korea © All Rights Reserved.</p>
+                </div>
+            
+            </div>
+
+        </footer>
+    </div>
+    
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+
+        AOS.init();
+
+        // AOS.init({
+        //     disable: false, 
+        //     disable: function() {var maxWidth = 1200; return window.innerWidth < maxWidth; }
+        // });
+
+    </script>
+
+</body>
+</html>
